@@ -1,0 +1,22 @@
+{
+  "Messages": [
+    {
+      "embeds": [
+        {
+          "title": "🏆 Storyteller: 1 000 stažení!",
+          "description": "Celkem 1 012 stažení napříč story.",
+          "color": 15844367
+        }
+      ],
+      "tts": false,
+      "components": null,
+      "allowed_mentions": {
+        "parse": [],
+        "replied_user": false
+      },
+      "sticker_ids": null
+    }
+  ],
+  "Thread": "",
+  "Crosspost": true
+}

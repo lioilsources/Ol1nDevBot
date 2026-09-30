@@ -1,0 +1,47 @@
+{
+  "Messages": [
+    {
+      "embeds": [
+        {
+          "url": "https://storyteller.ol1n.com",
+          "title": "🚀 storyteller-api v1.4.2 → prod",
+          "timestamp": "2026-09-29T10:15:00+02:00",
+          "color": 3066993,
+          "footer": {
+            "text": "olin.now"
+          },
+          "fields": [
+            {
+              "name": "Commit",
+              "value": "[`abc123d`](https://github.com/lioilsources/storyteller-api/commit/abc123def456)",
+              "inline": true
+            },
+            {
+              "name": "Duration",
+              "value": "1m 35s",
+              "inline": true
+            },
+            {
+              "name": "Status",
+              "value": "success",
+              "inline": true
+            },
+            {
+              "name": "Notes",
+              "value": "migrace DB"
+            }
+          ]
+        }
+      ],
+      "tts": false,
+      "components": null,
+      "allowed_mentions": {
+        "parse": [],
+        "replied_user": false
+      },
+      "sticker_ids": null
+    }
+  ],
+  "Thread": "",
+  "Crosspost": false
+}

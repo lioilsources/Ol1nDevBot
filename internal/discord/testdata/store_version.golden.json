@@ -1,0 +1,55 @@
+{
+  "Messages": [
+    {
+      "embeds": [
+        {
+          "url": "https://apps.apple.com/app/id1",
+          "title": "📱 Storyteller 1.5.0 — App Store",
+          "timestamp": "2026-09-29T10:15:00+02:00",
+          "color": 3066993,
+          "thumbnail": {
+            "url": "https://is1.mzstatic.com/icon.png"
+          },
+          "fields": [
+            {
+              "name": "Stav",
+              "value": "🟢 Live",
+              "inline": true
+            },
+            {
+              "name": "Build",
+              "value": "42",
+              "inline": true
+            },
+            {
+              "name": "Release notes",
+              "value": "Nové pohádky."
+            }
+          ]
+        }
+      ],
+      "tts": false,
+      "components": [
+        {
+          "components": [
+            {
+              "label": "Otevřít v storu",
+              "style": 5,
+              "disabled": false,
+              "url": "https://apps.apple.com/app/id1",
+              "type": 2
+            }
+          ],
+          "type": 1
+        }
+      ],
+      "allowed_mentions": {
+        "parse": [],
+        "replied_user": false
+      },
+      "sticker_ids": null
+    }
+  ],
+  "Thread": "Storyteller 1.5.0",
+  "Crosspost": false
+}

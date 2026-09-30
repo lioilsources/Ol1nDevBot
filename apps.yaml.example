@@ -1,0 +1,27 @@
+# Source of truth for the apps managed by Ol1nBot. Discord categories/channels
+# are derived from this file (idempotent reconcile, never deleted — only archived).
+guild_id: "123456789012345678"   # optional; DISCORD_GUILD_ID env wins
+timezone: Europe/Prague
+announce:
+  everyone_on_new_app: true
+  everyone_on_milestone: false
+github:
+  owner: lioilsources
+  watch_all: false          # true = all non-archived repos of the owner
+  repos: []                 # extra repos (not tied to an app) for the changelog
+discord:
+  ops_role: ops             # role pinged on failed deploys
+apps:
+  - slug: storyteller
+    name: Storyteller
+    emoji: "📖"
+    launched: true          # already public → existing versions/milestones recorded silently
+    ios:
+      bundle_id: com.ol1n.storyteller
+      asc_app_id: "6741234567"
+      country: cz
+    android:
+      package: com.ol1n.storyteller
+    repos: [lioilsources/storyteller, lioilsources/storyteller-api]
+    services: [storyteller-api]          # names used by the deploy hook
+    milestones: [first_release, downloads_100, downloads_1000, downloads_10000, v1_0]

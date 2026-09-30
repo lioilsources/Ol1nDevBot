@@ -1,0 +1,23 @@
+{
+  "Messages": [
+    {
+      "embeds": [
+        {
+          "title": "🔴 apple-lookup selhává",
+          "description": "3× po sobě",
+          "timestamp": "2026-09-29T10:15:00+02:00",
+          "color": 15158332
+        }
+      ],
+      "tts": false,
+      "components": null,
+      "allowed_mentions": {
+        "parse": [],
+        "replied_user": false
+      },
+      "sticker_ids": null
+    }
+  ],
+  "Thread": "",
+  "Crosspost": false
+}

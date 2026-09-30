@@ -1,0 +1,11 @@
+DROP TABLE baselines;
+DROP TABLE source_health;
+DROP TABLE outbox;
+DROP TABLE discord_objects;
+DROP TABLE milestones;
+DROP TABLE github_activity;
+DROP TABLE metrics_daily;
+DROP TABLE deploys;
+DROP TABLE version_states;
+DROP TABLE app_versions;
+DROP TABLE apps_override;

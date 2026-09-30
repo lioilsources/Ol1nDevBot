@@ -1,0 +1,22 @@
+{
+  "Messages": [
+    {
+      "embeds": [
+        {
+          "title": "🔄 Storyteller 1.5.0 — App Store: V review",
+          "description": "Čeká na review → **V review**",
+          "color": 15105570
+        }
+      ],
+      "tts": false,
+      "components": null,
+      "allowed_mentions": {
+        "parse": [],
+        "replied_user": false
+      },
+      "sticker_ids": null
+    }
+  ],
+  "Thread": "",
+  "Crosspost": false
+}

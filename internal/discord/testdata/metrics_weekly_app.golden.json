@@ -1,0 +1,51 @@
+{
+  "Messages": [
+    {
+      "embeds": [
+        {
+          "title": "📊 Storyteller — týden 21.–27. 9. 2026",
+          "color": 3447003,
+          "footer": {
+            "text": "App Store 800 · Google Play 450"
+          },
+          "fields": [
+            {
+              "name": "Downloads (7d)",
+              "value": "**1 250** (▲ 25 %)",
+              "inline": true
+            },
+            {
+              "name": "Impressions",
+              "value": "20 000 (▼ 5 %)",
+              "inline": true
+            },
+            {
+              "name": "Page views",
+              "value": "5 000 (▲ 25 %)",
+              "inline": true
+            },
+            {
+              "name": "CVR",
+              "value": "25,0 %",
+              "inline": true
+            },
+            {
+              "name": "Odinstalace",
+              "value": "12",
+              "inline": true
+            }
+          ]
+        }
+      ],
+      "tts": false,
+      "components": null,
+      "allowed_mentions": {
+        "parse": [],
+        "replied_user": false
+      },
+      "sticker_ids": null
+    }
+  ],
+  "Thread": "",
+  "Crosspost": false
+}

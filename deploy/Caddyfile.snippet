@@ -1,0 +1,7 @@
+# hooks.ol1n.com is exposed through the Cloudflare Tunnel → Caddy.
+hooks.ol1n.com {
+	handle_path /discordbot/* {
+		# The bot accepts both /deploy and /discordbot/deploy.
+		reverse_proxy ol1nbot:8080
+	}
+}

@@ -1,0 +1,21 @@
+# Add to the end of a deploy job. Requires the repo secret DEPLOY_HOOK_SECRET.
+# Values are passed via env (never ${{ }} inside `run`) to avoid shell injection.
+      - name: Notify Ol1nBot
+        if: always()
+        env:
+          DEPLOY_HOOK_SECRET: ${{ secrets.DEPLOY_HOOK_SECRET }}
+          SERVICE: storyteller-api
+          VERSION: ${{ github.ref_name }}
+          JOB_STATUS: ${{ job.status }}
+          COMMIT: ${{ github.sha }}
+          REPO: ${{ github.repository }}
+          APP_URL: https://storyteller.ol1n.com
+          NOTES: ${{ github.event.head_commit.message }}
+        run: |
+          status=success; [ "$JOB_STATUS" = "success" ] || status=failed
+          body=$(jq -cn --arg service "$SERVICE" --arg version "$VERSION" --arg status "$status" \
+            --arg commit "$COMMIT" --arg repo "$REPO" --arg url "$APP_URL" --arg notes "${NOTES:0:500}" \
+            '{service:$service, env:"prod", version:$version, status:$status, commit:$commit, repo:$repo, url:$url, notes:$notes}')
+          sig=$(printf '%s' "$body" | openssl dgst -sha256 -hmac "$DEPLOY_HOOK_SECRET" -hex | sed 's/^.* //')
+          curl -fsS -X POST https://hooks.ol1n.com/discordbot/deploy \
+            -H 'Content-Type: application/json' -H "X-Signature: sha256=$sig" --data "$body"

@@ -1,0 +1,22 @@
+# Snippet for the JODA compose stack (host "oli").
+services:
+  ol1nbot:
+    image: ghcr.io/lioilsources/ol1ndevbot:latest
+    # or: build: ../Ol1nDevBot
+    container_name: ol1nbot
+    restart: unless-stopped
+    env_file: ./ol1nbot/.env
+    volumes:
+      - ol1nbot-data:/data
+      - ./ol1nbot/apps.yaml:/config/apps.yaml:ro
+      - ./ol1nbot/secrets:/secrets:ro      # AuthKey.p8, gplay-sa.json
+    networks: [web]                         # same network as Caddy
+    labels:
+      ol1n.app: ol1nbot
+
+volumes:
+  ol1nbot-data:
+
+networks:
+  web:
+    external: true

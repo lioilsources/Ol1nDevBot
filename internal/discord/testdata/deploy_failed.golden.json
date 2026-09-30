@@ -1,0 +1,36 @@
+{
+  "Messages": [
+    {
+      "content": "\u003c@\u0026777\u003e deploy selhal",
+      "embeds": [
+        {
+          "title": "❌ storyteller-api v1.4.3 → prod",
+          "timestamp": "2026-09-29T10:15:00+02:00",
+          "color": 15158332,
+          "footer": {
+            "text": "olin.now"
+          },
+          "fields": [
+            {
+              "name": "Status",
+              "value": "failed",
+              "inline": true
+            }
+          ]
+        }
+      ],
+      "tts": false,
+      "components": null,
+      "allowed_mentions": {
+        "parse": [],
+        "roles": [
+          "777"
+        ],
+        "replied_user": false
+      },
+      "sticker_ids": null
+    }
+  ],
+  "Thread": "",
+  "Crosspost": false
+}

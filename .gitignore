@@ -1,0 +1,7 @@
+/bin/
+.env
+*.db
+*.db-shm
+*.db-wal
+secrets/
+apps.yaml

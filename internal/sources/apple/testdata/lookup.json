@@ -1,0 +1,16 @@
+{
+  "resultCount": 1,
+  "results": [
+    {
+      "trackId": 6741234567,
+      "trackName": "Storyteller",
+      "bundleId": "com.ol1n.storyteller",
+      "version": "{{VERSION}}",
+      "releaseNotes": "Nové pohádky a opravy.",
+      "description": "Pohádky na dobrou noc.",
+      "trackViewUrl": "https://apps.apple.com/cz/app/storyteller/id6741234567?uo=4",
+      "artworkUrl512": "https://is1-ssl.mzstatic.com/image/thumb/icon/512x512bb.jpg",
+      "currentVersionReleaseDate": "2026-09-28T07:00:00Z"
+    }
+  ]
+}
